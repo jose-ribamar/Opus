@@ -1,0 +1,9 @@
+lista empregador
+1-empregador=id
+2-nome
+3-usuario
+--senha
+4-email
+5-senha
+6-nivel
+7-descricao
