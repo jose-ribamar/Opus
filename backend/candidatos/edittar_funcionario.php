@@ -3,6 +3,7 @@
 include_once('../conexao_banco_dados/conexao.php');
 // pega o codigo de list_adm
 $id = $_GET['codigo'];
+
 $sql_consuta=mysqli_query($ligar, "SELECT *FROM tb_usuarios WHERE id='$id' ");
 $dados=mysqli_fetch_array($sql_consuta);
 
@@ -98,53 +99,53 @@ https://templatemo.com/tm-538-digital-trend
                         <div class="row">
                             <input type="hidden" name="codigo"  value='<?= $dados[0]?>'>
                           <div class="col-lg-6 col-12">
+                          <label  style="font-weight: bold;">Nome Completo:</label>
                             <input type="text" class="form-control" name="txt_nome" placeholder="Nome Completo" value='<?= $dados[1]?>'>
                           </div>
 
                           <div class="col-lg-6 col-12">
-                            <input type="text" class="form-control" name="txt_usuario" placeholder="nome de usuário" value='<?= $dados[2]?>'>
+                          <label  style="font-weight: bold;">Nome de usuário:</label>
+                            <input type="text" class="form-control" name="txt_usuario" placeholder="Nome de usuário" value='<?= $dados[2]?>'>
                           
                           </div>
 
                           <div class="col-lg-6 col-12">
+                          <label  style="font-weight: bold;">Senha:</label>
                             <input type="password" class="form-control" name="txt_senha" placeholder="Senha" value='<?= $dados[3]?>'>
                           
                           </div>
 
                           <div class="col-lg-6 col-12">
+                          <label  style="font-weight: bold;">Email:</label>
                             <input type="email" class="form-control" name="txt_email" placeholder="Email" value='<?= $dados[4]?>'>
                           </div>
 
 
+                        </div>
+                        
+                      <div class="row">
                           <div class="col-lg-6 col-12">
-                            Sexo:
-                            <select name="txt_sexo">
-                            <option value='<?= $dados[5]?>'>  <?= $dados[5]?> </option>
-                              <option values="Masculino"> Masculino</option>
-                              <option values="Feminino"> Feminino</option>
-                              <option values="Outros"> Outros</option>
-                            </select>
+                              <label for="txt_sexo" style="font-weight: bold;">Sexo:</label>
+                              <select name="txt_sexo" id="txt_sexo" class="form-control" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; width: 100%; font-size: 16px;">
+                                  <option value="<?= $dados[5] ?>"><?= $dados[5] ?></option>
+                                  <option value="Masculino">Masculino</option>
+                                  <option value="Feminino">Feminino</option>
+                                  <option value="Outros">Outros</option>
+                              </select>
                           </div>
 
-                          <!-- <div class="col-lg-6 col-12">
-                            tipo de conta:
-                            <select name="txt_nivel" >
-                              <option  value='<?= $dados[6]?>'> <?= $dados[6]?> </option> 
-                            </select> -->
-                          
-                          </div>
                           <div class="col-lg-6 col-12">
-                            Escolaridade:
-                            <select name="txt_escolar" >
-                            <option value='<?= $dados[7]?>'>  <?= $dados[7]?> </option>
-                              <option values="fundamental incompleto"> fundamental incompleto</option>
-                              <option values="fundamental completo e médio incompleto"> fundamental completo e médio incompleto</option>
-                              <option values="médio completo ou superior incompleto"> médio completo ou superior incompleto</option>
-                              <option values="superior completo"> superior completo</option>
-                              <option values="Pós-Graduação"> Pós-Graduação</option>
-                             
-                            </select>
+                              <label for="txt_escolar" style="font-weight: bold;">Escolaridade:</label>
+                              <select name="txt_escolar" id="txt_escolar" class="form-control" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; width: 100%; font-size: 16px;">
+                                  <option value="<?= $dados[7] ?>"><?= $dados[7] ?></option>
+                                  <option value="fundamental incompleto">Fundamental incompleto</option>
+                                  <option value="fundamental completo e médio incompleto">Fundamental completo e médio incompleto</option>
+                                  <option value="médio completo ou superior incompleto">Médio completo ou superior incompleto</option>
+                                  <option value="superior completo">Superior completo</option>
+                                  <option value="Pós-Graduação">Pós-Graduação</option>
+                              </select>
                           </div>
+                      </div>
 
                           <input type="hidden" class="form-control" name="txt_nivel" value='Funcionário'>
                          
