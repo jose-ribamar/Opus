@@ -92,7 +92,7 @@ https://templatemo.com/tm-538-digital-trend
 
 
                     <!-- casso o usuario ja tenha uma conta ele precisa apenas fazer um login -->
-                      <form action="login.php" method="POST" class="contact-form" data-aos="fade-up" data-aos-delay="300" role="form">
+                      <form action="../logar/login.php" method="POST" class="contact-form" data-aos="fade-up" data-aos-delay="300" role="form">
 
                         <div class="row">
                           <div class="col-lg-6 col-12">
