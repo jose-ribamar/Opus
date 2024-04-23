@@ -113,8 +113,8 @@ https://templatemo.com/tm-538-digital-trend
 
                           <div class="col-lg-6 col-12">
                             
-                            <select name="id_empregador" >
-                              <option type="hidden"  value='<?= $dados[0]?>'>
+                            <!-- <select name="id_empregador" > -->
+                              <input type="hidden" name="id_empregador"  value='<?= $dados[0]?>'>
                               
                             </select>
                           
