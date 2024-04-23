@@ -26,8 +26,11 @@ $sql_actualizar = mysqli_query($ligar, "UPDATE tb_usuarios SET nome='$nome', usu
 if ($sql_actualizar == true){
     // caso o cadastro tenha cido bem sucedido
     echo "<script>
+
         alert('Usuário actualizado com sucesso!');
-        window.location.href='../logar/grupo_usuarios.php';
+        
+        window.location.href='confirma_usuario.php';
+        
     </script>";
 }else{
 //  caso nao tenha realizado o cadastro
