@@ -38,11 +38,153 @@ https://templatemo.com/tm-538-digital-trend
      <link rel="stylesheet" href="../../css/aos.css">
      <link rel="stylesheet" href="../../css/owl.carousel.min.css">
      <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
-     <link rel="stylesheet" href="https://icons.getbootstrap.com/.">
-     <link rel="stylesheet" href="list.css">
+     <link rel="stylesheet" href="../../css/https://icons.getbootstrap.com/.">
+     <link rel="stylesheet" href="css/list.css">
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="../../css/templatemo-digital-trend.css">
+
+    
+
+     <style>
+    /* Animação de rotação de cor */
+    
+
+    /* Estilo do botão */
+    .button {
+      color: blue;
+        background-color: #3357ff; /* Cor de fundo */
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        position: relative; /* Para animação de rotação */
+        overflow: hidden; /* Para esconder a cor que se move além do botão */
+    }
+
+    /* Animação de rotação */
+    .button::before {
+        content: '';
+        color: blue;
+        position: absolute;
+        top: 0;
+        left: -50%;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(to right, transparent, #fff, transparent);
+        animation: spin 2s linear infinite; /* Duração e repetição da animação */
+    }
+</style>
+<style>
+    /* Animação do pontinho percorrendo a borda */
+    @keyframes pulse {
+        0% {
+            transform: translateX(-50%) translateY(-50%) scale(0);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: translateX(-50%) translateY(-50%) scale(1.5);
+            opacity: 0;
+        }
+    }
+
+    /* Estilo do botão */
+    .button {
+        background-color: #4CAF50; /* Cor de fundo */
+        color: blue;
+        border: none;
+        color: #3357ff; /* Azul escuro */
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        position: relative; /* Para animação do pontinho */
+        overflow: hidden; /* Para esconder o pontinho além do botão */
+    }
+
+    /* Animação do pontinho */
+    .button::before {
+        content: '';
+        color: blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        background-color: #3498db; /* Cor do pontinho */
+        border-radius: 50%;
+        animation: pulse 2s linear infinite; /* Duração e repetição da animação */
+    }
+
+    /* Animação de rotação de cor */
+    
+
+    /* Estilo do botão */
+    .button {
+
+        background-color: #3498ff; /* Cor de fundo */
+        border: none;
+        color: black;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 8px;
+        position: relative; /* Para animação de rotação */
+        overflow: hidden; /* Para esconder a cor que se move além do botão */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra escura */
+    }
+
+    /* Animação de rotação */
+    .button::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 200%;
+        height: 100%;
+        background: linear-gradient(to right, transparent, #fff, transparent);
+        animation: spin 2s linear infinite; /* Duração e repetição da animação */
+    }
+
+    /* Efeito de brilho */
+    .button::after {
+        content: '';
+        position: absolute;
+        top: -100%;
+        left: -100%;
+        width: 300%;
+        height: 300%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, transparent 80%); /* Luz */
+        animation: shine 2s linear infinite; /* Duração e repetição da animação */
+    }
+
+    /* Animação de brilho */
+    @keyframes shine {
+        to {
+            top: 150%;
+            left: 150%;
+        }
+    }
+</style>
+
+
 
 </head>
 <body>
@@ -139,7 +281,7 @@ https://templatemo.com/tm-538-digital-trend
 
                         
 
-                          <div class="nav-item">
+                        <div class="nav-item">
                             <button type="submit" class="button" name="submit" name="codigo" id="trap" >MAIS INFORMAÇÔES</button>
                         </div>
                       </form>
