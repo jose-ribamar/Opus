@@ -102,7 +102,7 @@ https://templatemo.com/tm-538-digital-trend
 
                           <div class="col-lg-6 col-12">
                             Sexo:
-                            <select name="txt_sexo" >
+                            <select name="txt_sexo" class="form-control" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; width: 100%; font-size: 16px;">
                               <option values="Masculino"> Masculino</option>
                               <option values="Feminino"> Feminino</option>
                               <option values="Outros"> Outros</option>
@@ -125,7 +125,7 @@ https://templatemo.com/tm-538-digital-trend
                           
                           <div class="col-lg-6 col-12">
                             Escolaridade:
-                            <select name="txt_escolar" >
+                            <select name="txt_escolar" class="form-control" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; width: 100%; font-size: 16px;">
                               <option values="fundamental incompleto"> fundamental incompleto</option>
                               <option values="fundamental completo e médio incompleto"> fundamental completo e médio incompleto</option>
                               <option values="médio completo ou superior incompleto"> médio completo ou superior incompleto</option>
