@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Tempo de geração: 23-Abr-2024 às 01:01
+-- Tempo de geração: 24-Abr-2024 às 02:39
 -- Versão do servidor: 8.0.27
 -- versão do PHP: 7.4.26
 
@@ -99,14 +99,15 @@ CREATE TABLE IF NOT EXISTS `tb_usuarios` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `usuario` (`usuario`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=44 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `tb_usuarios`
 --
 
 INSERT INTO `tb_usuarios` (`id`, `nome`, `usuario`, `senha`, `email`, `sexo`, `nivel`, `escolaridade`, `descricao`) VALUES
-(40, 'jose', 'jose', '123', 'jose@gmail.com', 'Masculino', 'Funcionário', 'Pós-Graduação', 'jose');
+(42, 'joão maria', 'jose', '123', 'joseribamarsousa2001@gmail.com', 'Masculino', 'Funcionário', 'Fundamental incomple', 'desempregado'),
+(43, 'Ana Maria gomes de Sousa', 'ana', '123', '', 'Feminino', 'Funcionário', 'fundamental completo', 'nd');
 
 -- --------------------------------------------------------
 
@@ -122,7 +123,7 @@ CREATE TABLE IF NOT EXISTS `tb_vagas` (
   `data_cadastro` date NOT NULL,
   `descricao` varchar(1000) NOT NULL,
   PRIMARY KEY (`id_vagas`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=41 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `tb_vagas`
@@ -130,7 +131,8 @@ CREATE TABLE IF NOT EXISTS `tb_vagas` (
 
 INSERT INTO `tb_vagas` (`id_vagas`, `id_empregador`, `titulo`, `data_cadastro`, `descricao`) VALUES
 (38, 52, 'Entregador avon', '2024-04-20', 'Conheça o gosto local\r\nConheça muitas pessoas\r\nSaiba falar em público\r\nMaiores de 18 anos'),
-(39, 51, 'Entregador natura', '2024-04-20', 'Conheça o gosto local\r\nConheça muitas pessoas\r\nSaiba falar em público\r\nMaiores de 18 anos');
+(39, 51, 'Entregador natura', '2024-04-20', 'Conheça o gosto local\r\nConheça muitas pessoas\r\nSaiba falar em público\r\nMaiores de 18 anos'),
+(40, 52, 'mm', '2024-04-24', 'mmm');
 
 -- --------------------------------------------------------
 
@@ -147,13 +149,14 @@ CREATE TABLE IF NOT EXISTS `usu` (
   PRIMARY KEY (`id`),
   UNIQUE KEY `usuario` (`usuario`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM AUTO_INCREMENT=39 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=40 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Extraindo dados da tabela `usu`
 --
 
 INSERT INTO `usu` (`id`, `nome`, `usuario`, `email`) VALUES
+(39, 'Ana Maria gomes de Sousa', 'ana', ''),
 (38, 'jose', 'jose', 'jose@gmail.com'),
 (37, 'Avon', 'avon', 'avon@aluno.ifpi.edu.br'),
 (36, 'Natura', 'natura', 'natura@aluno.ifpi.edu.br');
