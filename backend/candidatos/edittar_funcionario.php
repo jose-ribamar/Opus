@@ -138,11 +138,13 @@ https://templatemo.com/tm-538-digital-trend
                               <label for="txt_escolar" style="font-weight: bold;">Escolaridade:</label>
                               <select name="txt_escolar" id="txt_escolar" class="form-control" style="padding: 8px; border-radius: 5px; border: 1px solid #ccc; width: 100%; font-size: 16px;">
                                   <option value="<?= $dados[7] ?>"><?= $dados[7] ?></option>
-                                  <option value="fundamental incompleto">Fundamental incompleto</option>
-                                  <option value="fundamental completo e médio incompleto">Fundamental completo e médio incompleto</option>
-                                  <option value="médio completo ou superior incompleto">Médio completo ou superior incompleto</option>
-                                  <option value="superior completo">Superior completo</option>
-                                  <option value="Pós-Graduação">Pós-Graduação</option>
+                                  <option values="fundamental incompleto"> Fundamental incompleto</option>
+                                  <option values="fundamental completo"> Fundamental completo</option>
+                                  <option values="médio incompleto"> Médio incompleto</option>
+                                  <option values="médio completo"> Médio completo</option>
+                                  <option values="superior incompleto"> Superior incompleto</option>
+                                  <option values="superior completo"> superior completo</option>
+                                  <option values="Pós-Graduação"> Pós-Graduação</option>
                               </select>
                           </div>
                       </div>
