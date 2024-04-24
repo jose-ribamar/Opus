@@ -505,7 +505,7 @@ https://templatemo.com/tm-538-digital-trend
         <tr>
             <th >Nome</th>
             <th>Usuário</th>
-            <th>Senha</th>
+            <!-- <th>Senha</th> -->
             <th>Email</th>
             <th>Sexo</th>
             <th>Tipo de conta</th>
@@ -526,7 +526,7 @@ https://templatemo.com/tm-538-digital-trend
             <tr>
                 <td> <?= $dados[1] ?> </td>
                 <td> <?= $dados[2] ?> </td>
-                <td> <?= $dados[3] ?> </td>
+                <!-- <td> <?= $dados[3] ?> </td> -->
                 <td> <?= $dados[4] ?> </td>
                 <td> <?= $dados[5] ?> </td>
                 <td> <?= $dados[6] ?> </td>
